@@ -1,0 +1,41 @@
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background: var(--navbar);
+  display: flex;
+  border-top: 1px solid var(--active);
+  z-index: 100;
+}
+.bottom-nav button {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 100%;
+}
+.bottom-nav button.active {
+  background: var(--active);
+  font-weight: bold;
+  color: var(--button);
+}
+.bottom-nav .icon {
+  font-size: 22px;
+  line-height: 1;
+}
+.bottom-nav .label {
+  font-size: 12px;
+  margin-top: 2px;
+}
